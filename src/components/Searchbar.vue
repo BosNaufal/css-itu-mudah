@@ -1,20 +1,46 @@
 <template>
   <div class="searchbar-outer">
-    <div class="searchbar">
-      <input type="text" placeholder="Cari konten disini" />
-      <button>
+    <form @submit.prevent="handleSubmit" class="searchbar">
+      <input 
+        v-model="query" 
+        type="text" 
+        :placeholder="props.placeholder" 
+      />
+      <button type="submit">
         <i class="eva eva-search-outline"></i>
       </button>
-    </div>
+    </form>
   </div>
 </template>
 
+
 <script>
+import { ref } from '@vue/composition-api'
+
 export default {
+  props: {
+    placeholder: {
+      type: String,
+      default: "Cari konten disini",
+    }
+  },
+
+  setup(props) {
+    const query = ref("")
+    const handleSubmit = () => {
+      console.log("submit", query.value)
+    }
+    return {
+      props,
+      query,
+      handleSubmit,
+    }
+  }
 }
 </script>
 
-<style lang="less" scoped>
+
+<style lang="less">
 .searchbar {
   width: 100%;
   border: 1px solid #DDD;

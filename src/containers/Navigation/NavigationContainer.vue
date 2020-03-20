@@ -1,16 +1,19 @@
 <template>
-  <navigation 
-    :onOpenSidebar="handleOpenSidebar" 
-  />
+  <Fragment>
+    <navigation 
+      :onOpenSidebar="handleOpenSidebar" 
+    />
+    <searchbar />
+  </Fragment>
 </template>
 
 <script>
 import { inject, onMounted } from '@vue/composition-api'
 import { useStore, useDispatch } from '@/stores/useStore'
-import Navigation from './Navigation.vue'
-import Searchbar from './Searchbar.vue'
 import { SET_SIDEBAR_OPEN } from '@/stores/types'
 
+import Searchbar from '@/components/Searchbar'
+import Navigation from './Navigation'
 
 export default {
   components: {

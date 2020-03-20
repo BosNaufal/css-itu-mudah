@@ -5,6 +5,7 @@
       <SidebarContainer />
 
       <div class="main-content">
+        <MainSearchbarContainer />
         <slot/>
       </div>
     </div>
@@ -23,12 +24,15 @@ query {
 import StoreProvider from '@/stores/Provider'
 import NavigationContainer from '@/containers/Navigation/NavigationContainer'
 import SidebarContainer from '@/containers/Sidebar/SidebarContainer'
+import MainSearchbarContainer from '@/containers/MainSearchbar/MainSearchbarContainer'
 
 export default {
   components: {
     StoreProvider,
     NavigationContainer,
     SidebarContainer,
+
+    MainSearchbarContainer,
   } 
 }
 </script>

@@ -13,26 +13,17 @@
         </nav>
       </div>
     </div>
-
-    <div class="searchbar-wrapper">
-      <searchbar />
-    </div>
   </header>
 </template>
 
 
 <script>
-import Searchbar from './Searchbar.vue'
-
 export default {
   props: {
     onOpenSidebar: {
       type: Function,
       required: true,
     }
-  },
-  components: {
-    Searchbar,
   },
 }
 </script>

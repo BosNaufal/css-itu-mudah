@@ -8,6 +8,9 @@
             <i class="eva eva-close-outline"></i>
           </button>
         </div>
+        <div class="searchbar-wrapper">
+          <slot></slot>
+        </div>
         <div class="menu-list">
           <g-link to="/">1. Perkenalan</g-link>
           <g-link to="/">2. Selanjutnya</g-link>
@@ -66,6 +69,11 @@ export default {
   border: 0;
 }
 
+.searchbar {
+  &-wrapper {
+    padding: 20px 15px 10px;
+  }
+}
 
 .menu-list {
   padding-top: 10px;
