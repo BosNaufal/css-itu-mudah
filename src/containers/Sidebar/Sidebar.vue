@@ -11,10 +11,16 @@
         <div class="searchbar-wrapper">
           <slot></slot>
         </div>
-        <div class="menu-list">
-          <g-link to="/">1. Perkenalan</g-link>
-          <g-link to="/">2. Selanjutnya</g-link>
-          <g-link to="/">3. Dan Seterusnya</g-link>
+        <div 
+          v-if="list" 
+          v-for="(content, index) in list" 
+          class="menu-list"
+        >
+          <g-link :to="content.node.path">
+            <span @click="handleLinkClick">
+              {{ index === "0" ? "i" : index }}. {{ content.node.title }}
+            </span>
+          </g-link>
         </div>
       </div>
     </div>
@@ -25,9 +31,21 @@
 <script>
 export default {
   props: {
+    list: {
+      type: Array,
+    },
     onClose: {
       type: Function,
       required: true,
+    }
+  },
+
+  setup(props, ctx) {
+    const handleLinkClick = () => {
+      props.onClose()
+    }
+    return { 
+      handleLinkClick,
     }
   }
 }

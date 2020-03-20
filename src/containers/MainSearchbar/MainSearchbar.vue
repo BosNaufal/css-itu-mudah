@@ -12,6 +12,6 @@ export default {
 <style lang="less" scoped>
 .wrapper {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 </style>

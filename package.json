@@ -1,9 +1,9 @@
 {
-  "name": "css-itu-mudah",
+  "name": "css-cara-styling-santuy",
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "start": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {

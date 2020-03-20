@@ -42,7 +42,7 @@ export default {
   &-inner {
     background: #FFF;
     display: flex;
-    padding: 7px 0;
+    padding: 5px 0;
     align-items: center;
   }
   &-button {
@@ -50,7 +50,7 @@ export default {
     background: none;
     outline: none;
     border: none;
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 10px 0;
     padding-right: 10px;
     line-height: 0;

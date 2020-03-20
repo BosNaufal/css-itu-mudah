@@ -16,7 +16,10 @@ module.exports = {
     }
   ],
   templates: {
-    Content: '/chapter/:slug',
+    Content: [{
+      path: '/chapter/:slug',
+      component: './src/templates/Content/ContentContainer.vue',
+    }],
   },
   transformers: {
     remark: {

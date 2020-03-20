@@ -5,9 +5,9 @@ import {
 } from './types'
 
 const store = new Vuex.Store({
-  state: {
+  state: () => ({
     isSidebarOpen: false,
-  },
+  }),
   getters: {
     [GET_IS_OPEN_SIDEBAR] (state) {
       return state.isSidebarOpen

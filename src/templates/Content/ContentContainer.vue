@@ -3,7 +3,7 @@
 </template>
 
 <page-query>
-  query FirstPost {
+  query Post ($path: String!) {
     metadata {
       siteName
     }
@@ -16,7 +16,7 @@
         }
       }
     }
-    content (path: "/chapter/css-cara-styling-santuy") {
+    content (path: $path) {
       title
       content
     }
@@ -24,7 +24,8 @@
 </page-query>
 
 <script>
-import Content from '@/templates/Content/Content'
+import Content from './Content.vue'
+
 export default {
   components: {
     Content,
@@ -32,3 +33,6 @@ export default {
 }
 </script>
 
+<style>
+
+</style>

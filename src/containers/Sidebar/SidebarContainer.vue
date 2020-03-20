@@ -1,11 +1,13 @@
 <template>
   <Sidebar 
-    v-if="isSidebarOpen" 
+    v-show="isSidebarOpen" 
     :onClose="handleClose"
+    :list="allContent.edges"
   >
     <Searchbar placeholder="Cari Chapter" /> 
   </Sidebar>
 </template>
+
 
 <script>
 import { computed } from '@vue/composition-api'
@@ -20,8 +22,11 @@ export default {
     Sidebar,
     Searchbar,
   },
+  
+  setup(props, ctx) {
+    const { parent } = ctx
+    const allContent = parent.$page.allContent
 
-  setup() {
     const dispatch = useDispatch()
     const isSidebarOpen = useGetter(GET_IS_OPEN_SIDEBAR)
 
@@ -30,6 +35,7 @@ export default {
     }
 
     return {
+      allContent,
       handleClose,
       isSidebarOpen,
     }
