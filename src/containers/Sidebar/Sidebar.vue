@@ -13,12 +13,12 @@
         </div>
         <div 
           v-if="list" 
-          v-for="(content, index) in list" 
+          v-for="(content) in list" 
           class="menu-list"
         >
-          <g-link :to="content.node.path">
+          <g-link :to="content.path">
             <span @click="handleLinkClick">
-              {{ index === "0" ? "i" : index }}. {{ content.node.title }}
+              {{ content.originalIndex === "0" ? "i" : content.originalIndex }}. {{ content.title }}
             </span>
           </g-link>
         </div>

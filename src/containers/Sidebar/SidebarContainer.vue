@@ -2,15 +2,18 @@
   <Sidebar 
     v-show="isSidebarOpen" 
     :onClose="handleClose"
-    :list="allContent.edges"
+    :list="filteredList"
   >
-    <Searchbar placeholder="Cari Chapter" /> 
+    <Searchbar 
+      placeholder="Cari Chapter" 
+      :onInput="handleTypingSearch"
+    /> 
   </Sidebar>
 </template>
 
 
 <script>
-import { computed } from '@vue/composition-api'
+import { ref, computed } from '@vue/composition-api'
 import { useDispatch, useGetter } from '@/stores/useStore'
 import { SET_SIDEBAR_OPEN, GET_IS_OPEN_SIDEBAR } from '@/stores/types'
 
@@ -26,6 +29,12 @@ export default {
   setup(props, ctx) {
     const { parent } = ctx
     const allContent = parent.$page.allContent
+    const allList = computed(() => (
+      allContent.edges.map((item, index) => ({
+        ...item.node,
+        originalIndex: index,
+      }))
+    ))
 
     const dispatch = useDispatch()
     const isSidebarOpen = useGetter(GET_IS_OPEN_SIDEBAR)
@@ -33,11 +42,30 @@ export default {
     const handleClose = () => {
       dispatch(SET_SIDEBAR_OPEN, false)
     }
+    
+    const query = ref("")
+    const handleTypingSearch = (value) => {
+      query.value = value
+    }
+
+    const filteredList = computed(() => {
+      const regex = new RegExp(query.value, 'igm')
+      const filtered = allList.value.filter((content) => {
+        return (
+          content.title.match(regex) !== null
+          || content.path.match(regex) !== null
+        )
+      })
+      return filtered
+    })
 
     return {
       allContent,
-      handleClose,
       isSidebarOpen,
+      filteredList,
+
+      handleClose,
+      handleTypingSearch,
     }
   }
 }

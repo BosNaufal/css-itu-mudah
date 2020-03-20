@@ -4,6 +4,7 @@
       <input 
         v-model="query" 
         type="text" 
+        @input="handleInput"
         :placeholder="props.placeholder" 
       />
       <button type="submit">
@@ -22,17 +23,32 @@ export default {
     placeholder: {
       type: String,
       default: "Cari konten disini",
+    },
+    onInput: {
+      type: Function
+    },
+    onSearch: {
+      type: Function
     }
   },
 
   setup(props) {
     const query = ref("")
-    const handleSubmit = () => {
-      console.log("submit", query.value)
+
+    const handleInput = () => {
+      if (!props.onInput) return false
+      props.onInput(query.value)
     }
+
+    const handleSubmit = () => {
+      if (!props.onSearch) return false
+      props.onSearch(query.value)
+    }
+
     return {
       props,
       query,
+      handleInput,
       handleSubmit,
     }
   }
