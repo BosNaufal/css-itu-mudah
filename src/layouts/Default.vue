@@ -1,12 +1,14 @@
 <template>
-  <div class="mini-container">
-    <navigation />
-    <sidebar />
+  <StoreProvider>
+    <div class="mini-container">
+      <NavigationContainer />
+      <SidebarContainer />
 
-    <div class="main-content">
-      <slot/>
+      <div class="main-content">
+        <slot/>
+      </div>
     </div>
-  </div>
+  </StoreProvider>
 </template>
 
 <static-query>
@@ -18,13 +20,15 @@ query {
 </static-query>
 
 <script>
-import Navigation from '@/components/Navigation'
-import Sidebar from '@/components/Sidebar'
+import StoreProvider from '@/stores/Provider'
+import NavigationContainer from '@/containers/Navigation/NavigationContainer'
+import SidebarContainer from '@/containers/Sidebar/SidebarContainer'
 
 export default {
   components: {
-    Navigation,
-    Sidebar,
+    StoreProvider,
+    NavigationContainer,
+    SidebarContainer,
   } 
 }
 </script>

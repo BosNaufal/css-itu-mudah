@@ -1,0 +1,3 @@
+
+export const GET_IS_OPEN_SIDEBAR = "GET_IS_OPEN_SIDEBAR"
+export const SET_SIDEBAR_OPEN = "SET_SIDEBAR_OPEN"
