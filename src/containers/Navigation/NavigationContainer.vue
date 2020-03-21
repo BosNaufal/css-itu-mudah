@@ -2,6 +2,7 @@
   <Fragment>
     <navigation 
       :onOpenSidebar="handleOpenSidebar" 
+      :metadata="metadata"
     />
     <searchbar />
   </Fragment>
@@ -22,6 +23,9 @@ export default {
   },
 
   setup(props, ctx) {
+    const { parent } = ctx
+    const metadata = parent.$page.metadata
+
     const dispatch = useDispatch()
 
     const handleOpenSidebar = () => {
@@ -29,6 +33,7 @@ export default {
     }
 
     return {
+      metadata,
       handleOpenSidebar,
     }
   },

@@ -5,7 +5,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'CSS - Cara Styling Santuy | an e-book by Bos Naufal',
+  bookTitle: "CSS Itu Mudah",
+  author: {
+    name: "Naufal Rabbani",
+    link: "https://github.com/BosNaufal",
+    email: "bosnaufalemail@gmail.com",
+  },
+  license: "CC BY-NC 3.0",
+  siteName: 'CSS Itu Mudah | mini e-book by Bos Naufal',
+  siteDescription: "Sebuah ebook untuk pemula memulai belajar CSS secara mudah",
   plugins: [
     {
       use: '@gridsome/source-filesystem',

@@ -1,6 +1,6 @@
 ---
-title: Basic Penulisan CSS
-slug: basic-penulisan-css
+title: Basic Penulisan
+slug: basic-penulisan
 date: 19-03-2020
 ---
 

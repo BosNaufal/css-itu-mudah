@@ -1,6 +1,6 @@
 ---
-title: CSS - Cara Styling Santuy
-slug: css-cara-styling-santuy
+title: Perkenalan
+slug: perkenalan
 date: 19-03-2020
 ---
 

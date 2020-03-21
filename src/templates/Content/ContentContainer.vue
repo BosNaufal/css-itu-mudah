@@ -6,6 +6,11 @@
   query Post ($path: String!) {
     metadata {
       siteName
+      bookTitle
+      author {
+        name
+        email
+      }
     }
     allContent(sort: { by: "fileInfo.name", order:ASC }) {
       totalCount

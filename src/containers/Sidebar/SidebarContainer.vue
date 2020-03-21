@@ -3,6 +3,7 @@
     v-show="isSidebarOpen" 
     :onClose="handleClose"
     :list="filteredList"
+    :metadata="metadata"
   >
     <Searchbar 
       placeholder="Cari Chapter" 
@@ -28,6 +29,7 @@ export default {
   
   setup(props, ctx) {
     const { parent } = ctx
+    const metadata = parent.$page.metadata
     const allContent = parent.$page.allContent
     const allList = computed(() => (
       allContent.edges.map((item, index) => ({
@@ -60,6 +62,7 @@ export default {
     })
 
     return {
+      metadata,
       allContent,
       isSidebarOpen,
       filteredList,

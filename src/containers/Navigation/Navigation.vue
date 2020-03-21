@@ -7,8 +7,8 @@
             <i class="eva eva-menu-outline"></i>
           </button>
           <div class="navigation-logo">
-            <g-link to="/" class="title">CSS - Cara Styling Santuy</g-link>
-            <a href="https://github.com/BosNaufal" class="subtitle">By Bos Naufal</a>
+            <g-link to="/" class="title">{{ metadata.bookTitle }}</g-link>
+            <a :href="metadata.author.link" class="subtitle">By {{ metadata.author.name }}</a>
           </div>
         </nav>
       </div>
@@ -20,6 +20,7 @@
 <script>
 export default {
   props: {
+    metadata: Object,
     onOpenSidebar: {
       type: Function,
       required: true,

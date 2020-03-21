@@ -3,7 +3,7 @@
     <div class="sidebar-outer">
       <div class="sidebar-inner">
         <div class="header">
-          <div class="title">CSS - Cara Styling Santuy</div>
+          <div class="title">{{ metadata.bookTitle }}</div>
           <button class="main-button" @click="onClose">
             <i class="eva eva-close-outline"></i>
           </button>
@@ -18,7 +18,7 @@
         >
           <g-link :to="content.path">
             <span @click="handleLinkClick">
-              {{ content.originalIndex === "0" ? "i" : content.originalIndex }}. {{ content.title }}
+              {{ content.originalIndex === 0 ? "" : `${content.originalIndex}.` }} {{ content.title }}
             </span>
           </g-link>
         </div>
@@ -31,9 +31,8 @@
 <script>
 export default {
   props: {
-    list: {
-      type: Array,
-    },
+    list: Array,
+    metadata: Object,
     onClose: {
       type: Function,
       required: true,

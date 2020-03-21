@@ -6,6 +6,11 @@
   query FirstPost {
     metadata {
       siteName
+      bookTitle
+      author {
+        name
+        email
+      }
     }
     allContent(sort: { by: "fileInfo.name", order:ASC }) {
       totalCount
@@ -16,7 +21,7 @@
         }
       }
     }
-    content (path: "/chapter/css-cara-styling-santuy") {
+    content (path: "/chapter/perkenalan") {
       title
       content
     }

@@ -5,9 +5,16 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const config = require('./gridsome.config') 
+
 module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+    api.loadSource(async (store) => {
+      store.addMetadata('bookTitle', config.bookTitle)
+      store.addMetadata('author', config.author)
+      store.addMetadata('license', config.license)
+    })
   })
 
   api.createPages(({ createPage }) => {
