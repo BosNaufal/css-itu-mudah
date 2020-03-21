@@ -40,7 +40,9 @@ export default {
 
 <style>
 :root {
+  --dark-primary-color: #5116bb;
   --primary-color: #8061b7;
+  --light-primary-color: #f3e6ff;
 }
 body {
   /* font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */

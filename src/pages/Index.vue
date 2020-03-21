@@ -18,6 +18,11 @@
         node {
           title
           path
+          headings(depth: h2) {
+            depth
+            value
+            anchor
+          }
         }
       }
     }

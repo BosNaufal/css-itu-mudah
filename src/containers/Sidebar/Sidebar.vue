@@ -61,10 +61,14 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     border-bottom: 1px solid #DDD;
   }
   &-inner {
     background: #FFF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -94,10 +98,9 @@ export default {
 }
 
 .menu-list-wrapper {
+  flex: 1;
   padding-bottom: 35px;
   overflow-y: auto;
-  position: absolute;
   width: 100%;
-  height: 100%;
 }
 </style>

@@ -53,5 +53,7 @@ Nggak bingung kan? Kalau masih bingung, coba cek cuplikan di bawah ini.
 
 ## Lah kok gini doang mas?
 
-Lah kok gini doang? katanya mau diwarnai? di-styling? Sabar dong. di Chapter berikutnya kita bakal bahas cara penulisan stylingnya. Kuy lah.
+> Lah kok gini doang? katanya mau diwarnai? di-styling? 
+
+Sabar dong. di Chapter berikutnya kita bakal bahas cara penulisan stylingnya. Kuy lah.
 

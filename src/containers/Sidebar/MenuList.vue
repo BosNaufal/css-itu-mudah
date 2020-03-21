@@ -1,11 +1,7 @@
 <template>
   <Fragment>
-    <ul 
-      v-if="list" 
-      v-for="(content) in list" 
-      class="menu-list"
-    >
-      <li>
+    <ul v-if="list" class="menu-list">
+      <li v-for="(content) in list">
         <g-link :to="content.path">
           <span @click="onClick">
             {{ content.originalIndex === 0 ? "" : `${content.originalIndex}.` }} {{ content.title }}
@@ -39,9 +35,18 @@ export default {
   padding-left: 5px;
   margin: 0;
   padding-top: 10px;
+  margin-bottom: 10px;
 
   & .menu-list {
+    margin-top: -3px;
+    padding-top: 0;
     padding-left: 17px;
+    padding-bottom: 5px;
+    a {
+      padding-bottom: 5px;
+      padding-top: 5px;
+      color: #888;
+    }
   } 
 
   a {
@@ -52,6 +57,14 @@ export default {
 
     &:hover {
       color: var(--primary-color);
+    }
+
+    &.active {
+      color: var(--primary-color);
+    }
+
+    &.active--exact.active {
+      color: var(--dark-primary-color);
     }
   }
 }

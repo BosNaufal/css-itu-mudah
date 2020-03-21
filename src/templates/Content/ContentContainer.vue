@@ -18,7 +18,7 @@
         node {
           title
           path
-          headings {
+          headings(depth: h2) {
             depth
             value
             anchor

@@ -81,12 +81,19 @@ export default {
       query.value = value
     }
 
+    const matcher = (regex, content) => {
+      return (
+        content.title.match(regex) !== null
+        || content.path.match(regex) !== null
+      )
+    }
+
     const filteredList = computed(() => {
       const regex = new RegExp(query.value, 'igm')
       const filtered = allList.value.filter((content) => {
+        const matchOnTheChapterItSelf = matcher(regex, content)
         return (
-          content.title.match(regex) !== null
-          || content.path.match(regex) !== null
+          matchOnTheChapterItSelf
         )
       })
       return filtered

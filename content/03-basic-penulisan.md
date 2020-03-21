@@ -63,19 +63,33 @@ Pada HTML yang telah kita buat sebelumnya, terdapat tag `<head>` coba tambahkan 
 ...
 ```
 
-> Tampilan ketika di browser
+Tampilan ketika di browser
 
 ![Tampilan saat menggunakan style tag](./images/style-tag.png) 
 
 Yuk kita breakdown lagi masing-masing syntaxnya.
 
-- `<style>...</style>`: Tag yang digunakan untuk **menuliskan CSS pada file HTML**.
-- `b`: **selector** CSS untuk menyeleksi *element* apa yang hendak kita *styling*. Yang di styling pada contoh di atas adalah element `<b>`.
-- `{...}`: pembuka dan penutup syntax styling pada masing-masing selector. fungsinya sama seperti tag pembuka dan penutup dari HTML. Tapi ini digunakan untuk CSS.
-- `background`: property CSS yang digunakan untuk memberi warna pada latar belakang *element*.
-- `#6E75A8`: value dari property `background` yaitu berupa **kode warna** yang ditulis menggunakan *hexcode*.
-- `font-size`: property CSS yang digunakan untuk mengatur ukuran text atau font pada laman web. valuenya bukan berupa warna, melainkan angka dalam satuan pixel--Bisa juga dalam satuan yang lain.
-- `20px`: value dari property `font-size` yang berupa angka dengan satuan pixel. Tidak harus pixel yaa.. kita juga bisa menggunakan satuan `rem` maupun `em`.
+##### `<style>...</style>`
+Tag yang digunakan untuk **menuliskan CSS pada file HTML**.
+
+##### `b`
+**selector** CSS untuk menyeleksi *element* apa yang hendak kita *styling*. Yang di styling pada contoh di atas adalah element `<b>`.
+
+##### `{...}`
+pembuka dan penutup syntax styling pada masing-masing selector. fungsinya sama seperti tag pembuka dan penutup dari HTML. Tapi ini digunakan untuk CSS.
+
+##### `background`
+property CSS yang digunakan untuk memberi warna pada latar belakang *element*.
+
+##### `#6E75A8`
+value dari property `background` yaitu berupa **kode warna** yang ditulis menggunakan *hexcode*.
+
+##### `font-size`
+property CSS yang digunakan untuk mengatur ukuran text atau font pada laman web. valuenya bukan berupa warna, melainkan angka dalam satuan pixel--Bisa juga dalam satuan yang lain.
+
+##### `20px`
+value dari property `font-size` yang berupa angka dengan satuan pixel. Tidak harus pixel yaa.. kita juga bisa menggunakan satuan `rem` maupun `em`.
+
 
 
 Kali ini lebih menarik karena teman-teman telah berkenalan dengan selector dan lebih banyak lagi `property` CSS dengan `value` selain warna. Kita juga berkenalan dengan angka dengan satuan pixel. Jadi property CSS itu bisa bervariasi value nya. tergantung property nya.
