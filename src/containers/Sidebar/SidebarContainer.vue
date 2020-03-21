@@ -31,12 +31,41 @@ export default {
     const { parent } = ctx
     const metadata = parent.$page.metadata
     const allContent = parent.$page.allContent
-    const allList = computed(() => (
-      allContent.edges.map((item, index) => ({
-        ...item.node,
-        originalIndex: index,
+
+    const makeSubIndex = (index, parentIndex) => {
+      if (parentIndex !== 0) return `${parentIndex}.${index + 1}`
+      const allIndex = []
+      for (let i = 0; i <= index; i++) {
+        allIndex.push("i")
+      } 
+      return allIndex.join("")
+    }
+
+    const convertHeadingListToMenuList = (headingList, parent) => {
+      if (!headingList) return null
+      return headingList.map((heading, index) => ({
+        originalIndex: makeSubIndex(index, parent.originalIndex),
+        title: heading.value,
+        path: `${parent.path}${heading.anchor}`,
       }))
+    }
+
+    const allList = computed(() => (
+      allContent.edges.map((item, index) => {
+        const transformedItem = {
+          ...item.node,
+          originalIndex: index,
+        }
+        return {
+          ...transformedItem,
+          subChapter: convertHeadingListToMenuList(
+            transformedItem.headings,
+            transformedItem,
+          )
+        }
+      })
     ))
+
 
     const dispatch = useDispatch()
     const isSidebarOpen = useGetter(GET_IS_OPEN_SIDEBAR)

@@ -1,6 +1,6 @@
 <template>
   <StoreProvider>
-    <div class="mini-container">
+    <div class="mini-container start-content">
       <NavigationContainer />
       <SidebarContainer />
 
@@ -69,6 +69,10 @@ img {
 }
 
 .main-content {
+}
+
+.start-content {
+  padding-top: 75px;
 }
 
 </style>

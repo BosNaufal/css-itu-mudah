@@ -11,16 +11,11 @@
         <div class="searchbar-wrapper">
           <slot></slot>
         </div>
-        <div 
-          v-if="list" 
-          v-for="(content) in list" 
-          class="menu-list"
-        >
-          <g-link :to="content.path">
-            <span @click="handleLinkClick">
-              {{ content.originalIndex === 0 ? "" : `${content.originalIndex}.` }} {{ content.title }}
-            </span>
-          </g-link>
+        <div class="menu-list-wrapper">
+        <MenuList 
+          :list="list" 
+          :onClick="onClose"
+        />
         </div>
       </div>
     </div>
@@ -29,7 +24,13 @@
 
 
 <script>
+import MenuList from './MenuList.vue'
+
 export default {
+  components: {
+    MenuList,
+  },
+
   props: {
     list: Array,
     metadata: Object,
@@ -92,18 +93,11 @@ export default {
   }
 }
 
-.menu-list {
-  padding-top: 10px;
-
-  a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    padding: 5px 15px;
-
-    &:hover {
-      color: var(--primary-color);
-    }
-  }
+.menu-list-wrapper {
+  padding-bottom: 35px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 </style>
