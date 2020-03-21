@@ -8,11 +8,11 @@ date: 19-03-2020
 
 ## Motivasi
 
-CSS merupakan salah satu faktor yang bikin saya jatuh cinta pada dunia frontend pertama kali. Karena CSS ini bak menghubungkan antara dunia software engineering dan seni. Mempelajari CSS lebih fun ketimbang belajar bahasa pemrograman yang lain--karena saya lebih suka menggambar dan desain. 
+CSS merupakan salah satu faktor yang bikin saya jatuh cinta pada dunia frontend pertama kali. Karena CSS ini bak menghubungkan antara dunia software engineering dan seni. Mempelajari CSS lebih fun ketimbang belajar bahasa pemrograman yang lain—karena saya lebih suka menggambar dan desain. 
 
-Sedihnya, entah kenapa, kurikulum pendidikan kita (terutama di perguruan tinggi), lebih fokus pada algoritma, logika, dan bahasa pemrograman yang hanya menampilkan output berupa teks hitam putih. Yaa... tidak logika dan algoritma itu memang butuh sih. Tapi saya sempat terpikirkan, daripada siswa diajarkan berpikir keras di awal, kenapa tidak membiarkan siswa belajar CSS dulu secara santuy. Guna membangun minat dan membangun keterbiasaan terhadap pemrograman.
+Sedihnya, entah kenapa, kurikulum pendidikan kita (terutama di perguruan tinggi), lebih fokus pada algoritma, logika, dan bahasa pemrograman yang hanya menampilkan output berupa teks hitam putih. Yaa... logika dan algoritma itu memang butuh sih. Tapi saya sempat bertanya-tanya, daripada siswa diajarkan berpikir keras di awal, kenapa tidak membiarkan siswa belajar CSS dulu? . Guna membangun minat dan membangun keterbiasaan terhadap pemrograman.
 
-Mungkin banyak teman-teman yang bingung, emang belajar CSS itu mulainya dari mana sih? Sebenarnya banyak sekali resource pembelajaran dan tutorial yang bisa dicari di  google. Tapi lagi-lagi bahasa dan skill dalam memilih keyword masih menjadi kendala. Semoga mini ebook ini bisa menjadi salah satu penggugah semangat  teman-teman untuk mulai terjun di dunia software engineering--khususnya di dunia frontend.
+Mungkin banyak teman-teman yang bingung, emang belajar CSS itu mulainya dari mana sih? Sebenarnya banyak sekali resource pembelajaran dan tutorial yang bisa dicari di  google. Tapi lagi-lagi bahasa dan skill dalam memilih keyword masih menjadi kendala. Semoga (mini) ebook—Entah ini bisa dikatakan sebagai ebook atau bukan—ini bisa menjadi salah satu penggugah semangat  teman-teman untuk mulai terjun di dunia software engineering—di dunia frontend.
 
 
 ## Credits

@@ -28,6 +28,10 @@ export default {
 .content {
   padding-bottom: 25px;
 
+  a {
+    color: #2b2b2b;
+  }
+
   
   h5 {
     margin-bottom: -10px;

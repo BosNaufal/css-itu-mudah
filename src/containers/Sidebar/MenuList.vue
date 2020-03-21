@@ -1,10 +1,10 @@
 <template>
   <Fragment>
     <ul v-if="list" class="menu-list">
-      <li v-for="(content) in list">
+      <li v-for="(content) in list" :key="content.originalIndex">
         <g-link :to="content.path">
           <span @click="onClick">
-            {{ content.originalIndex === 0 ? "" : `${content.originalIndex}.` }} {{ content.title }}
+            {{ `${content.originalIndex}.` }} {{ content.title }}
           </span>
         </g-link>
         <menu-list 

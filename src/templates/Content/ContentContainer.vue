@@ -1,5 +1,8 @@
 <template>
-  <Content :content="$page.content" />
+  <Fragment>
+    <Content :content="$page.content" />
+    <Pagination />
+  </Fragment>
 </template>
 
 <page-query>
@@ -34,11 +37,13 @@
 </page-query>
 
 <script>
+import Pagination from '@/components/Pagination'
 import Content from './Content.vue'
 
 export default {
   components: {
     Content,
+    Pagination,
   },
 
   metaInfo: (context) => {
@@ -48,6 +53,10 @@ export default {
       title: `${content.title} | ${metadata.bookTitle}`,
     }
   },
+
+  setup() {
+    return {}
+  }
 }
 </script>
 
