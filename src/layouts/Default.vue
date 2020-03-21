@@ -55,6 +55,9 @@ body {
 h1, h2, h3, h4 {
   font-weight: 400;
   color: #000000;
+  padding-top: 70px;
+  margin-top: -67px;
+  margin-bottom: -10px;
 }
 
 img {

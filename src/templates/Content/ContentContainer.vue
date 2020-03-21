@@ -40,13 +40,14 @@ export default {
   components: {
     Content,
   },
+
   metaInfo: (context) => {
     const content = context.$page.content
     const metadata = context.$page.metadata
     return {
       title: `${content.title} | ${metadata.bookTitle}`,
     }
-  }
+  },
 }
 </script>
 

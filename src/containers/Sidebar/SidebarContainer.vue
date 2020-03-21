@@ -47,6 +47,7 @@ export default {
         originalIndex: makeSubIndex(index, parent.originalIndex),
         title: heading.value,
         path: `${parent.path}${heading.anchor}`,
+        anchor: heading.anchor,
       }))
     }
 
@@ -55,6 +56,7 @@ export default {
         const transformedItem = {
           ...item.node,
           originalIndex: index,
+          anchor: null,
         }
         return {
           ...transformedItem,

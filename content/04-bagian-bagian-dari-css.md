@@ -8,7 +8,7 @@ Untuk memperdetil pemahaman pada CSS, mari kita pahami dulu bagian-bagian dari s
 
 ## Bagian-bagian dari CSS
 
-[!bagian-bagian dari CSS](./images/bagian-bagian-css.png)
+![bagian-bagian dari CSS](./images/bagian-bagian-css.png)
 
 ## Selector
 

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>{{ content.title }}</h1>
+    <h1 class="title">{{ content.title }}</h1>
     <div v-html="content.content"></div>
   </Layout>
 </template>
@@ -13,11 +13,15 @@ export default {
     content: {
       type: Object,
       required: true,
-    }
+    },
   },
 }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+.title {
+  padding-top: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
 </style>
