@@ -12,8 +12,11 @@ module.exports = {
     email: "bosnaufalemail@gmail.com",
   },
   license: "CC BY-NC 3.0",
-  siteName: 'CSS Itu Mudah | mini e-book by Bos Naufal',
+
+  siteName: 'CSS Itu Mudah | e-book by Naufal Rabbani',
   siteDescription: "Sebuah ebook untuk pemula memulai belajar CSS secara mudah",
+  titleTemplate: "%s",
+
   plugins: [
     {
       use: '@gridsome/source-filesystem',
