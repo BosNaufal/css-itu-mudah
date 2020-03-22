@@ -31,9 +31,14 @@ Coba buka pada browser, maka akan menghasilkan tampilan Heading Text yang berwar
 
 Selanjutnya, mari kita breakdown, maksud dari masing-masing syntaxnya. 
 
-- `style="value"`: attribute `style` HTML yang memungkinkan kita untuk melakuakn styling pada tag secara langsung. Sedangkan `value` nya adalah syntax CSSnya.
-- `color`: salah satu **property** yang ada di CSS. Fungsinya untuk memberi warna pada text.
-- `blue`: value dari property `color`. property `color` menerima value warna yang berupa text ataupun hex code. misal: `#000000`. 
+##### `style="value"`
+attribute `style` HTML yang memungkinkan kita untuk melakuakn styling pada tag secara langsung. Sedangkan `value` nya adalah syntax CSSnya.
+
+##### `color`
+salah satu **property** yang ada di CSS. Fungsinya untuk memberi warna pada text.
+
+##### `blue`
+value dari property `color`. property `color` menerima value warna yang berupa text ataupun hex code. misal: `#000000`. 
 
 
 Gimana udah mulai bingung? gapapa... namanya juga belajar, pelan-pelan pemahannnya akan bertambah. Semangat terus yak.
