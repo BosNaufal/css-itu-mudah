@@ -153,4 +153,4 @@ hasilnya akan seperti dibawah ini:
 
 perhatikan baik-baik jarak antara garis terluar elemen dan konten yang ada di dalamnya.
 
-Bab ini cukup penting, karena disini kita harus membuat pemahaman tentang apa itu `<div>` dan stylingnya di CSS. Kalau saya pribadi, menganggap setiap *element* adalah sebuah kotak 2D.
+Bab ini cukup penting, karena disini kita harus membuat pemahaman tentang apa itu `<div>` dan cara stylingnya di CSS. Kalau saya pribadi, menganggap setiap *element* adalah sebuah kotak 2D. yang nantinya bisa saling mengisi. Asek~

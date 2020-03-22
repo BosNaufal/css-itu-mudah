@@ -229,4 +229,22 @@ Hal ini dikarenakan pada aturan `text-align` hanya menerima 4 opsi `value` saja.
 }
 ```
 
+Jadi setiap value dari property bisa jadi unik dan berbeda. Pastikan teman-teman melihat contoh cara menggunakannya di internet. Akan saya beri satu contoh lagi yaitu `border` diisi dengan urutan 
+
+```
+border: ukuran<spasi>jenis_border<spasi>warna;
+```
+
+```css
+border: 2px solid blue; /* BOLEH */
+
+/* BOLEH, tapi gak keliatan warnannya */
+border: 2px solid; 
+
+/* Atau bisa dipisah satu-satu */
+border-width: 2px;
+border-style: solid;
+border-color: blue;
+```
+
 Bab ini agak sedikit lebih panjang yaa? yaaa karena pada bab ini kita belajar prioritas CSS yang menurut saya penting untuk diketahui. Semangat terus yaak. Kalau mau rehat, boleh lho. Tapi kalau mau lanjut, silahkan ke next chapter~
