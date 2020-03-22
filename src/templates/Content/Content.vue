@@ -21,7 +21,7 @@ export default {
 <style lang="less">
 .content-title {
   padding-top: 0;
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: -15px;
 }
 

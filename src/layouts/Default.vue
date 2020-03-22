@@ -5,7 +5,6 @@
       <SidebarContainer />
 
       <div class="main-content">
-        <MainSearchbarContainer />
         <slot/>
       </div>
     </div>

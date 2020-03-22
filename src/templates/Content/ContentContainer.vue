@@ -1,7 +1,10 @@
 <template>
   <Fragment>
     <Content :content="$page.content" />
-    <Pagination />
+    <PaginationContainer 
+      :content="$page.content"
+      :allContent="$page.allContent" 
+    />
   </Fragment>
 </template>
 
@@ -31,19 +34,21 @@
     }
     content (path: $path) {
       title
+      path
       content
     }
   }
 </page-query>
 
 <script>
-import Pagination from '@/components/Pagination'
+import PaginationContainer from './PaginationContainer.vue'
 import Content from './Content.vue'
+import { useChapterListData } from '../../containers/Sidebar/useChapterList'
 
 export default {
   components: {
     Content,
-    Pagination,
+    PaginationContainer,
   },
 
   metaInfo: (context) => {
@@ -53,10 +58,6 @@ export default {
       title: `${content.title} | ${metadata.bookTitle}`,
     }
   },
-
-  setup() {
-    return {}
-  }
 }
 </script>
 

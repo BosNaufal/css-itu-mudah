@@ -1,10 +1,18 @@
 <template>
   <div class="pagination">
-    <g-link class="pagination-prev">
+    <g-link class="pagination-prev" 
+      :disabled="prev === null"
+      :to="prev && prev.path"
+    >
       <i class="eva eva-arrow-ios-back-outline"></i>
       <span>Prev Page</span>
     </g-link>
-    <g-link class="pagination-next">
+
+    <g-link 
+      class="pagination-next" 
+      :disabled="next === null"
+      :to="next && next.path"
+    >
       <span>Next Page</span>
       <i class="eva eva-arrow-ios-forward-outline"></i>
     </g-link>
@@ -14,6 +22,8 @@
 <script>
 export default {
   props: {
+    next: Object,
+    prev: Object,
   },
 }
 </script>
@@ -32,20 +42,27 @@ export default {
     flex-direction: row;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 
     i {
       font-size: 2.5rem;
+      color: var(--primary-color);
     }
 
     span {
-      color: #2b2b2b;
-      color: var(--primary-color);
       font-size: 1rem;
+      color: #2b2b2b;
+    }
+
+    &[disabled] {
+      &, i, span {
+        color: #CCC;
+      }
     }
   }
 
   &-prev, &-next {
-    padding: 10px 0 15px;
+    padding: 10px 0 10px;
   }
 
   &-next {
