@@ -237,10 +237,86 @@ Tebak apa yang terjadi?
 Jika kita menghapus tanda (`>`) maka **semua div yang ada di dalam element** `class="level-1"` akan terpengaruh dan memiliki garis merah.
 
 
-## pseudo-class Selector
+## Interaction
+
+Sebenernya namanya adalah *pseudo selector* yang memungkinkan kita menambahkan detil interaksi-interaksi kecil pada laman web kita. Interaksi misalnya saat mouse berada di atas element, maka element berganti warna. Mau cobain? Kuy.
+
+```html
+<div class="my-element">Touch Me</div>
+```
+
+```css
+.my-element {
+  padding: 35px 25px;
+  display: inline-block;
+  background: black;
+  color: white;
+}
+
+.my-element:hover {
+  background: blue;
+}
+```
+
+Makan kita bisa melakukan interaksi dengan element seperti gambar dibawah ini:
+
+![efek hover dengan CSS](./images/hover.gif)
+
+Efek ini namanya adalah efek hover guis. Selain sentuhan, kita juga bisa memberi efek pada saat user focus pada suatu input. Maksudnya gimana? yuk mari kita coba.
+
+```html
+<input type="text" placeholder="Coba fokus disini" />
+```
+
+```css
+input {
+  margin-top: 15px;
+  margin-left: 25px;
+  border: 1px solid #DDD;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: none; /* Untuk menghilangkan garis biru */
+  border: 2px solid brown;
+}
+```
+
+Coba klik input text yang ada pada layar. Dan lihat apa yang berubah.
+
+![Efek Focus menggunakan CSS](./images/focus.gif)
 
 
+## Select By Attribute
+
+Ini menarik, karena ada kasus dimana kita tidak ingin menambahkan class pada suatu element, dan hanya memenfaatkan attribute yang lain untuk dijadikan acuan. Contohnya adalah saat memberi tampilan pada inputan yang enable (bisa diinput) dan inputan yang disabled (tidak bisa diinput). Maka bisa dituliskan sebagai berikut:
+
+```html
+<input type="text" placeholder="Bisa diinput" />
+<input type="text" placeholder="TIDAK BISA DIINPUT" disabled="disabled" />
+```
+
+```css
+input {
+  margin-top: 10px;
+  margin-left: 25px;
+  border: 2px solid #DDD;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+input[disabled="disabled"] {
+  border-color: red;
+  background: #DDD;
+}
+```
+
+Maka tampilannya akan seperti ini
+
+![Cara styling input saat disabled](./images/by-attribute.png)
 
 
-Mulai bingung? gapapa ga harus paham sekarang.
+Banyak banget yak chpater ini? Mulai bingung? gapapa ga harus paham sekarang.
 
