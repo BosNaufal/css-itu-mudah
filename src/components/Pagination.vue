@@ -1,21 +1,23 @@
 <template>
-  <div class="pagination">
-    <g-link class="pagination-prev" 
-      :disabled="prev === null"
-      :to="prev && prev.path"
-    >
-      <i class="eva eva-arrow-ios-back-outline"></i>
-      <span>Prev Page</span>
-    </g-link>
+  <div class="mini-container">
+    <div class="pagination">
+      <g-link class="pagination-prev" 
+        :disabled="prev === null"
+        :to="prev && prev.path"
+      >
+        <i class="eva eva-arrow-ios-back-outline"></i>
+        <span>Prev Page</span>
+      </g-link>
 
-    <g-link 
-      class="pagination-next" 
-      :disabled="next === null"
-      :to="next && next.path"
-    >
-      <span>Next Page</span>
-      <i class="eva eva-arrow-ios-forward-outline"></i>
-    </g-link>
+      <g-link 
+        class="pagination-next" 
+        :disabled="next === null"
+        :to="next && next.path"
+      >
+        <span>Next Page</span>
+        <i class="eva eva-arrow-ios-forward-outline"></i>
+      </g-link>
+    </div>
   </div>
 </template>
 

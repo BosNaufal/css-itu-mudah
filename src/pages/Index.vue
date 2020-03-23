@@ -1,5 +1,11 @@
 <template>
-  <Content :content="$page.content" />
+  <Fragment>
+    <Content :content="$page.content" />
+    <PaginationContainer 
+      :content="$page.content"
+      :allContent="$page.allContent" 
+    />
+  </Fragment>
 </template>
 
 <page-query>
@@ -28,6 +34,7 @@
     }
     content (path: "/chapter/perkenalan") {
       title
+      path
       content
     }
   }
@@ -35,9 +42,12 @@
 
 <script>
 import Content from '@/templates/Content/Content'
+import PaginationContainer from '@/templates/Content/PaginationContainer.vue'
+
 export default {
   components: {
     Content,
+    PaginationContainer,
   },
 }
 </script>

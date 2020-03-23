@@ -2,20 +2,26 @@
   <aside>
     <div class="sidebar-outer">
       <div class="sidebar-inner">
-        <div class="header">
-          <div class="title">{{ metadata.bookTitle }}</div>
-          <button class="main-button" @click="onClose">
-            <i class="eva eva-close-outline"></i>
-          </button>
+        <div class="header-outer">
+          <div class="mini-container">
+            <div class="header-inner">
+              <div class="title">{{ metadata.bookTitle }}</div>
+              <button class="main-button" @click="onClose">
+                <i class="eva eva-close-outline"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="searchbar-wrapper">
-          <slot></slot>
-        </div>
-        <div class="menu-list-wrapper">
-        <MenuList 
-          :list="list" 
-          :onClick="onClose"
-        />
+        <div class="sidebar-content mini-container">
+          <div class="searchbar-wrapper">
+            <slot></slot>
+          </div>
+          <div class="menu-list-wrapper">
+            <MenuList 
+              :list="list" 
+              :onClick="onClose"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -70,12 +76,22 @@ export default {
     display: flex;
     flex-direction: column;
   }
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .header {
-  border-bottom: 1px solid #DDD;
-  display: flex;
-  align-items: center;
+  &-outer {
+    border-bottom: 1px solid #DDD;
+  }
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .title {
@@ -85,7 +101,7 @@ export default {
 
 .main-button {
   background: none;
-  padding: 10px 15px;
+  padding: 10px 0;
   font-size: 1.7rem;
   line-height: 0;
   border: 0;
@@ -93,7 +109,7 @@ export default {
 
 .searchbar {
   &-wrapper {
-    padding: 20px 15px 10px;
+    padding: 20px 0 10px;
   }
 }
 

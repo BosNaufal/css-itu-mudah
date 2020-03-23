@@ -38,6 +38,10 @@ export default {
 
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --dark-primary-color: #5116bb;
   --primary-color: #8061b7;
@@ -70,6 +74,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
 }
 
 .main-content {

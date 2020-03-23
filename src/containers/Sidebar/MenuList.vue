@@ -53,7 +53,7 @@ export default {
     display: block;
     text-decoration: none;
     color: #000;
-    padding: 5px 15px;
+    padding: 5px 5px;
 
     &:hover {
       color: var(--primary-color);
