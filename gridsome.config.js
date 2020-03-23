@@ -17,6 +17,10 @@ module.exports = {
   siteDescription: "Sebuah ebook untuk pemula memulai belajar CSS secara mudah",
   titleTemplate: "%s",
 
+  prefetch: {
+    mask: '.woff2$', // example - disable all prefetch 
+  },
+
   plugins: [
     {
       use: '@gridsome/source-filesystem',
