@@ -15,6 +15,8 @@ module.exports = {
 
   siteName: 'CSS Itu Mudah | e-book by Naufal Rabbani',
   siteDescription: "Sebuah ebook untuk pemula memulai belajar CSS secara mudah",
+  siteUrl: 'https://bosnaufal.github.io',
+  pathPrefix: '/css-itu-mudah',
   titleTemplate: "%s",
 
   plugins: [
