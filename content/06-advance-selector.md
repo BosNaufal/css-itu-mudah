@@ -80,10 +80,13 @@ dst.
 
 Selain dikombinasikan, kita juga bisa melakukan styling **beberapa selector dalam 1 block sekaligus**. Misal:
 
+konten HTML:
+
 ```html
 <a href="#" class="prev-link">Prev</a>
 <a href="#" class="next-link">Next</a>
 ```
+konten CSS
 
 ```css
 .next-link, .prev-link {
@@ -184,6 +187,8 @@ Tadaaaa!
 
 Berikutnya mirip dengan nested, tapi ini lebih spesifik pada childrennya di bawahnya secara langsung. Misal nih:
 
+konten HTML:
+
 ```html
 <div class="level-1">
   <div>Level 2</div>
@@ -199,6 +204,8 @@ Berikutnya mirip dengan nested, tapi ini lebih spesifik pada childrennya di bawa
   </div>
 </div>
 ```
+
+Konten CSS:
 
 ```css
 div {
@@ -241,9 +248,13 @@ Jika kita menghapus tanda (`>`) maka **semua div yang ada di dalam element** `cl
 
 Sebenernya namanya adalah *pseudo selector* yang memungkinkan kita menambahkan detil interaksi-interaksi kecil pada laman web kita. Interaksi misalnya saat mouse berada di atas element, maka element berganti warna. Mau cobain? Kuy.
 
+Konten HTML:
+
 ```html
 <div class="my-element">Touch Me</div>
 ```
+
+Konten CSS:
 
 ```css
 .my-element {
@@ -264,9 +275,13 @@ Makan kita bisa melakukan interaksi dengan element seperti gambar dibawah ini:
 
 Efek ini namanya adalah efek hover guis. Selain sentuhan, kita juga bisa memberi efek pada saat user focus pada suatu input. Maksudnya gimana? yuk mari kita coba.
 
+Konten HTML:
+
 ```html
 <input type="text" placeholder="Coba fokus disini" />
 ```
+
+Konten CSS
 
 ```css
 input {
@@ -292,10 +307,14 @@ Coba klik input text yang ada pada layar. Dan lihat apa yang berubah.
 
 Ini menarik, karena ada kasus dimana kita tidak ingin menambahkan class pada suatu element, dan hanya memenfaatkan attribute yang lain untuk dijadikan acuan. Contohnya adalah saat memberi tampilan pada inputan yang enable (bisa diinput) dan inputan yang disabled (tidak bisa diinput). Maka bisa dituliskan sebagai berikut:
 
+Konten HTML:
+
 ```html
 <input type="text" placeholder="Bisa diinput" />
 <input type="text" placeholder="TIDAK BISA DIINPUT" disabled="disabled" />
 ```
+
+Konten CSS:
 
 ```css
 input {

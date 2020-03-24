@@ -109,6 +109,7 @@ export default {
 
 .searchbar {
   &-wrapper {
+    width: 100%;
     padding: 20px 0 10px;
   }
 }
