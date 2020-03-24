@@ -91,3 +91,42 @@ Kita tau sendiri kalau `.navbar` punya 2 konten yaitu `.logo` dan `.menu-list`. 
 Bisa kita perhatikan dari gambar diatas, bahwa `.menu-list` mempunyai porsi yang lebih besar ketimbang `.logo`. Padahal sebenernya `.menu-list` hanya butuh space kecil untuk menampung 3 menunya tersebut.
 
 Sampai sini, bisa yaa? membedakan mana Flex Container dan mana Flex Content?
+
+
+## Nested Flexbox
+
+Nah kita juga bisa membuat nested flexbox, yaitu flexbox di dalam flexbox. Maksudnya gimana? Jika diperhatikan, `.menu-list` merupakan flex content dari `.navbar`. Nah kita juga bisa menjadikan `.menu-list` sebagai flex container juga. Itu mengapa di `.menu-list` ada aturan `display: flex`. Mau eksperimen? coba hapus aturan `display: flex;` yang ada di `.menu-list`.
+
+
+## Mengubah Style
+
+Semoga semua pembaca membaca hingga bab ini yaa. Karena saya sedikit menyesal belum menginfokan bahwa 1 element bisa memiliki banyak class. tujuannya buat apa? tujuannya beragam, bisa agar aturan css kita *reusable* (dapat digunakan ulang) ataupun bisa digunakan untuk membuat variasi. Gimana tuh maksudnya? Yuk kita coba aja membuat variasi pada navbar kita.
+
+```css
+/* Tambahkan blok ini */
+.active {
+  background: #ffc107;
+}
+```
+
+Konten HTML
+
+```html
+<div class="navbar">
+  <a href="#" class="logo">LOGO</a>
+
+  <div class="menu-list">
+    <a href="#" class="menu active">Home</a>
+    <a href="#" class="menu">Blog</a>
+    <a href="#" class="menu">About</a>
+  </div>
+</div>
+```
+
+Hasil
+
+![Variasi dengan multi class](./images/multi-class.png)
+
+Perhatikan pada link **Home**. Pada menu home terdapat class `menu` dan class `active`. Nah karena kita telah memiliki variasi menu aktif, kita tinggal pilih, menu mana yang mau diberi warna orange. Simpel kan?
+
+Setelah ini kita akan coba membuat navbarnya menjadi RESPONSIVE. Keren gak tuh? sabar yaaa.... 
