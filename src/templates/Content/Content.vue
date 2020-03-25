@@ -60,6 +60,13 @@ export default {
       margin: 0;
     }
   }
+    
+  @media only screen and (min-width: 1024px) {
+    blockquote {
+      margin: 25px 0 15px;
+      font-size: 1.4rem;
+    } 
+  }
 
   ul {
     padding-left: 27px;
@@ -82,6 +89,14 @@ export default {
     background: #FFF;
     font-size: 0.85rem;
   } 
+  
+  @media only screen and (min-width: 1024px) {
+    pre[class*="language-"],
+    code[class*="language-"] {
+      background: #FFF;
+      font-size: 1rem;
+    } 
+  }
 
   .table-wrapper {
     display: block;

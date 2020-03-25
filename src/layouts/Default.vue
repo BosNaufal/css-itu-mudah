@@ -57,6 +57,12 @@ body {
   font-size: 1.1rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.15rem;
+  }
+}
+
 h1, h2, h3, h4 {
   font-weight: 400;
   color: #000000;
@@ -70,7 +76,7 @@ img {
 }
 
 .mini-container {
-  max-width: 760px;
+  max-width: 730px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;

@@ -4,7 +4,6 @@
       <input 
         v-model="query" 
         type="text" 
-        @input="handleInput"
         :placeholder="props.placeholder" 
       />
       <button type="submit">
@@ -16,7 +15,7 @@
 
 
 <script>
-import { ref } from '@vue/composition-api'
+import { ref, watch } from '@vue/composition-api'
 
 export default {
   props: {
@@ -35,10 +34,10 @@ export default {
   setup(props) {
     const query = ref("")
 
-    const handleInput = () => {
+    watch(query, (newQuery) => {
       if (!props.onInput) return false
       props.onInput(query.value)
-    }
+    })
 
     const handleSubmit = () => {
       if (!props.onSearch) return false
@@ -48,7 +47,6 @@ export default {
     return {
       props,
       query,
-      handleInput,
       handleSubmit,
     }
   }
