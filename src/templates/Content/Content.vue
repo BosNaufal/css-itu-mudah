@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="content-title">{{ content.title }}</h1>
-    <div class="content" v-html="content.content"></div>
+    <div class="content" ref="content" v-html="content.content"></div>
   </Layout>
 </template>
 
@@ -15,6 +15,15 @@ export default {
       required: true,
     },
   },
+
+  mounted() {
+    this.$refs.content.querySelectorAll("table").forEach((table) => {
+      const wrapper = document.createElement("div")
+      wrapper.className = "table-wrapper"
+      const tableParent = table.parentNode.insertBefore(wrapper, table)
+      wrapper.appendChild(table)
+    })
+  }
 }
 </script>
 
@@ -73,5 +82,30 @@ export default {
     background: #FFF;
     font-size: 0.85rem;
   } 
+
+  .table-wrapper {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+
+    table {
+      min-width: 700px;
+      border-collapse: collapse;
+    }
+
+    tr > th {
+      background: #EEE;
+      border: 1px solid #888;
+      color: black;
+      padding: 5px 15px;
+    }
+
+    tr > td {
+      border: 1px solid #888;
+      padding: 5px 7px;
+    }
+  }
 }
 </style>

@@ -54,7 +54,7 @@ body {
   padding:0;
   line-height: 1.5;
   color: #474747;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 h1, h2, h3, h4 {
