@@ -7,12 +7,19 @@ import VueCompositionAPI from '@vue/composition-api'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
-  Vue.use(Plugin)
-  Vue.use(Vuex)
-  Vue.use(VueCompositionAPI)
 
-  const store = require('@/stores/store').default
-  appOptions.store = store
+  head.link.push({
+    rel: "canonical", 
+    href: "http://bosnaufal.github.io/css-itu-mudah/",
+  })
+  head.link.push({
+    rel: "author", 
+    href: "https://github.com/BosNaufal",
+  })
+  head.link.push({
+    rel: "publisher", 
+    href: "https://github.com/BosNaufal",
+  })
 
   head.link.push({
     rel: 'stylesheet',
@@ -29,6 +36,14 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     rel: 'stylesheet',
     href: 'https://unpkg.com/eva-icons@1.1.3/style/eva-icons.css',
   })
+
+  
+  Vue.use(Plugin)
+  Vue.use(Vuex)
+  Vue.use(VueCompositionAPI)
+
+  const store = require('@/stores/store').default
+  appOptions.store = store
 
   Vue.component('Layout', DefaultLayout)
   Vue.component('Fragment', Fragment)
