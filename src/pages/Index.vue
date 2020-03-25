@@ -54,6 +54,7 @@ export default {
     const content = context.$page.content
     const metadata = context.$page.metadata
     const description = "CSS adalah salah satu faktor yang bikin saya jatuh cinta pada dunia frontend. Karena CSS ini menghubungkan antara software engineering dan seni. CSS lebih fun"
+    const coverImage = require('../../content/images/bagian-bagian-css.png') 
     return {
       title: metadata.siteName,
       meta: [
@@ -87,7 +88,7 @@ export default {
         },
         {
           name: "og:image",
-          content: "http://bosnaufal.github.io/css-itu-mudah/assets/static/content/images/bagian-bagian-css.png",
+          content: coverImage,
         },
         {
           name: "twitter:card",
@@ -111,7 +112,7 @@ export default {
         },
         {
           name: "twitter:image",
-          content: "http://bosnaufal.github.io/css-itu-mudah/assets/static/content/images/bagian-bagian-css.png",
+          content: coverImage,
         },
       ]
     }

@@ -74,10 +74,6 @@ export default {
           content: "http://bosnaufal.github.io/css-itu-mudah/",
         },
         {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
           name: "twitter:creator",
           content: "@BosNaufal",
         },
