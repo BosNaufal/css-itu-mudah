@@ -5,7 +5,8 @@
   "scripts": {
     "build": "gridsome build",
     "start": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.3.0",
