@@ -56,16 +56,40 @@ export default {
     const metadata = context.$page.metadata
     return {
       title: `${content.title} | ${metadata.bookTitle}`,
-      robots: "index, follow",
-
-      "og:type": "website",
-      "og:title": metadata.siteName,
-      "og:url": "http://bosnaufal.github.io/css-itu-mudah/",
-
-      "twitter:card": "summary_large_image",
-      "twitter:creator": "@BosNaufal",
-      "twitter:site": "@BosNaufal",
-      "twitter:title": metadata.siteName,
+      meta: [
+        {
+          name: "robots",
+          content: "index, follow",
+        },
+        {
+          name: "og:type",
+          content: "website",
+        },
+        {
+          name: "og:title",
+          content: metadata.siteName,
+        },
+        {
+          name: "og:url",
+          content: "http://bosnaufal.github.io/css-itu-mudah/",
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:creator",
+          content: "@BosNaufal",
+        },
+        {
+          name: "twitter:site",
+          content: "@BosNaufal",
+        },
+        {
+          name: "twitter:title",
+          content: metadata.siteName,
+        },
+      ],
     }
   },
 }
