@@ -273,7 +273,52 @@ Makan kita bisa melakukan interaksi dengan element seperti gambar dibawah ini:
 
 ![efek hover dengan CSS](./images/hover.gif)
 
-Efek ini namanya adalah efek hover guis. Selain sentuhan, kita juga bisa memberi efek pada saat user focus pada suatu input. Maksudnya gimana? yuk mari kita coba.
+Efek ini namanya adalah efek hover guis. Hover adalah interaksi saat user mengarahkan kursornya di atas suatu *element*.
+
+## Transition
+
+Nah itu kan agak sedikit kaku yaa efeknya? kita bisa lho membuatnya lebih smooth dalam proses transisinya. Bagimana caranya? kita tambahkan aturan `transition`. seperti ini.
+
+```css
+.my-element {
+  padding: 35px 25px;
+  display: inline-block;
+  background: black;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+.my-element:hover {
+  background: blue;
+}
+```
+
+Hasilnya
+
+![Basic transition](./images/transition.gif)
+
+Lebih smooth kan perubahan warnannya? izinkan saya menjelaskan secara detail maksud dari syntax transition.
+
+##### `transition`
+
+Untuk mengadakan efek transisi pada suatu element.
+
+##### `all`
+
+`all` adalah perubahan apa yang hendak kita beri efek transisi? Sebenernya kita bisa juga menulis `background` karena yang kita ubah atau kita beri efek transisi hanyalah pada perubahan `background`-nya. Tapi saya pribadi lebih sering menggunakan `all`.
+
+##### `0.5s`
+
+`0.5s` adalah durasi transisi. Ditulis dalam satuan *seconds*. Guna menentukan seberapa cepat pergantian warnanya. Coba eksperimen ganti durasinya jadi `2s`. Maka akan menghasilkan transisi perubahan warna yang lebih lama.
+
+##### `ease-out`
+
+`ease-out` ini adalah *timing function*. gimana yaa ngejelasinnya. Sebenarnya ini *optional* (tidak harus ditulis). Jika kita tidak menuliskan *timing function*, maka kita akan mendapatkan default *timing function* yaitu `linear`. yang artinya transisi berjalan secara `linear`. Sedangkan jika `ease-out`, transisi akan lamban di awal, kemudian makin cepat pada bagian akhir. Hmm... agak rumit menjelaskannya.
+
+
+## Input Interaction
+
+Selain sentuhan (hover), kita juga bisa memberi efek pada saat user focus pada suatu input. Maksudnya gimana? yuk mari kita coba.
 
 Konten HTML:
 
