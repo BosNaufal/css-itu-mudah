@@ -6,7 +6,15 @@ date: 25-03-2020
 
 ## Berkenalan Dengan Viewport
 
-Nah sekarang bayangkan jika navbar kita di pasang di mobile devices yang ukuran layarnya kecil. Tentu hasilnya tidak akan elok kan? Cara lihatnya gimana? cara lihatnya teman-teman bisa klik kanan > inspect element lalu klik tanda titik tiga (di ujung kanan atas) > ubah posisi devtools menjadi di sebelah kanan. Akan saya contohkan--Tapi agak berat nih GIF nya. Sabar yak.
+Nah sekarang bayangkan jika navbar kita di pasang di mobile devices yang ukuran layarnya kecil. Tentu hasilnya tidak akan elok kan? Cara lihatnya gimana? cara lihatnya teman-teman bisa:
+
+```
+- klik kanan pada element
+- inspect element lalu klik tanda titik tiga (di ujung kanan atas) 
+- ubah posisi devtools menjadi di sebelah kanan. 
+```
+
+Akan saya contohkan. Tapi agak berat nih GIF nya. Sabar yak.
 
 ![Cara mensimulasikan tampilan di HP](./images/responsive-inspector.gif)
 

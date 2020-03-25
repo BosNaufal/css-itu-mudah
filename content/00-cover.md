@@ -15,10 +15,32 @@ Sedihnya, entah kenapa, kurikulum pendidikan kita (terutama di perguruan tinggi)
 Mungkin banyak teman-teman yang bingung, emang belajar CSS itu mulainya dari mana sih? Sebenarnya banyak sekali resource pembelajaran dan tutorial yang bisa dicari di  google. Tapi lagi-lagi bahasa dan skill dalam memilih keyword masih menjadi kendala. Semoga (mini) ebook—Entah ini bisa dikatakan sebagai ebook atau bukan—ini bisa menjadi salah satu penggugah semangat  teman-teman untuk mulai terjun di dunia software engineering—di dunia frontend.
 
 
+## Daftar Isi
+
+[1. Sekilas Tentang CSS](./chapter/sekilas-tentang-css)
+
+[2. Hello World](./chapter/hello-world)
+
+[3. Basic Penulisan](./chapter/basic-penulisan)
+
+[4. Bagian-bagian Dari CSS](./chapter/bagian-bagian-dari-css)
+
+[5. Konsep Box](./chapter/konsep-box)
+
+[6. Advance Selector](./chapter/advance-selector)
+
+[7. Layouting](./chapter/layouting)
+
+[8. Praktik Layouting](./chapter/praktik-layouting)
+
+[9. Responsive](./chapter/responsive)
+
+[10. Menggunakan Framework](./chapter/menggunakan-framework)
+
+
 ## Credits
+Ebook ini dibuat oleh **Muhammad Naufal Rabbani**. Sangat mengharapkan pertanyaan, kritik dan saran. Silahkan drop email di [bosnaufalemail@gmail.com](mailto:bosnaufalemail@gmail.com) atau hubungi langsung di telegram [@BosNaufal](https://t.me/BosNaufal) atau [facebook](https://facebook.com/BosNaufalAccount).
 
-Ebook ini dibuat oleh Muhammad Naufal Rabbani. Sangat mengharapkan pertanyaan, kritik dan saran. Silahkan drop email di [bosnaufalemail@gmail.com](mailto:bosnaufalemail@gmail.com) atau hubungi langsung di telegram [@BosNaufal](https://t.me/BosNaufal) atau [facebook](https://facebook.com/BosNaufalAccount)
+Semoga benar-benar jadi manfaat dan penyemangat untuk belajar Software engineering khususnya di dunia web development dan frontend development. Jangan segan untuk membagikan ebook ini yaa...
 
-Semoga benar-benar jadi manfaat dan penyemangat untuk belajar Software engineering khususnya di dunia web development dan frontend development. Jangan segan untuk membagikan ebook ini....
-
-Jadikan resource ini bermanfaat tanpa melanggar hak cipta. Ebook ini berlisensi Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)
+Jadikan resource ini bermanfaat tanpa melanggar hak cipta. Boleh dishare, dengan attribusi dan **tidak untuk diperjual belikan** yaa guis. Ebook ini berlisensi Attribution-NonCommercial 3.0 Unported [(CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/).
