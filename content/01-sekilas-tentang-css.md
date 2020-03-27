@@ -6,7 +6,7 @@ date: 19-03-2020
 
 ## Pengertian CSS
 
-Jangan tertipu dengan judul buku ini yaa. Karena sebenarnya CSS adalah singkatan dari *Cascading Style Sheets*. Udah itu aja. Eh, saya tambahkan deh. Jadi *Cascading* tuh artinya mengalir ke bawah. Oleh karena itu, dalam penulisannya, CSS ditulis dengan cara *cascade* atau menurun. Nah konsep dasar ini harus dipahami betul sebelum masuk ke pembahasan berikutnya.
+CSS adalah singkatan dari *Cascading Style Sheets*. Udah itu aja. Eh, saya tambahkan deh. Jadi *Cascading* tuh artinya mengalir ke bawah. Oleh karena itu, dalam penulisannya, CSS ditulis dengan cara *cascade* atau menurun. Nah konsep dasar ini harus dipahami betul sebelum masuk ke pembahasan berikutnya.
 
 Gimana sih maksudnya menurun ke bawah? entar yaa dibahas. ikuti saja terus chapter-chapter selanjutnya.
 
