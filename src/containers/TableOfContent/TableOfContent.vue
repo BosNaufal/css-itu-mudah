@@ -10,6 +10,7 @@
             <MenuList 
               :isFiltered="isFiltered"
               :list="list" 
+              :onClick="handleClick"
             />
           </div>
         </div>
@@ -32,6 +33,15 @@ export default {
     list: Array,
     metadata: Object,
   },
+
+  methods: {
+    handleClick() {
+      const mainContent = document.querySelector("#main-content")
+      if (mainContent) {
+        mainContent.scrollTo(0, 0)
+      }
+    }
+  }
 }
 </script>
 
