@@ -4,17 +4,22 @@
       :disabled="prev === null"
       :to="prev && prev.path"
     >
-      <i class="eva eva-arrow-ios-back-outline"></i>
-      <span>Prev Page</span>
+      <div @click="handleClick">
+        <i class="eva eva-arrow-ios-back-outline"></i>
+        <span>Prev Page</span>
+      </div>
     </g-link>
 
     <g-link 
       class="pagination-next" 
       :disabled="next === null"
       :to="next && next.path"
+      @click="handleClick"
     >
-      <span>Next Page</span>
-      <i class="eva eva-arrow-ios-forward-outline"></i>
+      <div @click="handleClick">
+        <span>Next Page</span>
+        <i class="eva eva-arrow-ios-forward-outline"></i>
+      </div>
     </g-link>
   </div>
 </template>
@@ -25,6 +30,14 @@ export default {
     next: Object,
     prev: Object,
   },
+  methods: {
+    handleClick() {
+      const mainContent = document.querySelector("#main-content")
+      if (mainContent) {
+        mainContent.scrollTo(0, 0)
+      }
+    }
+  }
 }
 </script>
 
@@ -36,13 +49,17 @@ export default {
   border-top: 2px solid #DDD;
 
   a {
-    text-decoration: none;
-    width: 50%;
-    display: flex; 
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
+    display: block;
     cursor: pointer;
+    width: 50%;
+    text-decoration: none;
+
+    & > div {
+      display: flex; 
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+    }
 
     i {
       position: relative;
@@ -79,20 +96,17 @@ export default {
   }
 
   &-prev, &-next {
-    padding: 25px 0px;
-    @media only screen and (min-width: 1024px) {
-      & {
-        padding: 30px 0px;
-      }
+    & > div {
+      padding: 30px 0px;
     }
   }
 
-  &-next {
+  &-next > div {
     border-left: 1px solid #DDD;
     justify-content: flex-end;
     padding-right: 3%;
   }
-  &-prev {
+  &-prev > div {
     border-right: 1px solid #DDD;
     justify-content: flex-start;
     padding-left: 3%;
