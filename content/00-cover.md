@@ -17,25 +17,25 @@ Mungkin banyak teman-teman yang bingung, emang belajar CSS itu mulainya dari man
 
 ## Daftar Isi
 
-[1. Sekilas Tentang CSS](./chapter/sekilas-tentang-css)
+[1. Sekilas Tentang CSS](/css-itu-mudah/chapter/sekilas-tentang-css)
 
-[2. Hello World](./chapter/hello-world)
+[2. Hello World](/css-itu-mudah/chapter/hello-world)
 
-[3. Basic Penulisan](./chapter/basic-penulisan)
+[3. Basic Penulisan](/css-itu-mudah/chapter/basic-penulisan)
 
-[4. Bagian-bagian Dari CSS](./chapter/bagian-bagian-dari-css)
+[4. Bagian-bagian Dari CSS](/css-itu-mudah/chapter/bagian-bagian-dari-css)
 
-[5. Konsep Box](./chapter/konsep-box)
+[5. Konsep Box](/css-itu-mudah/chapter/konsep-box)
 
-[6. Advance Selector](./chapter/advance-selector)
+[6. Advance Selector](/css-itu-mudah/chapter/advance-selector)
 
-[7. Layouting](./chapter/layouting)
+[7. Layouting](/css-itu-mudah/chapter/layouting)
 
-[8. Praktik Layouting](./chapter/praktik-layouting)
+[8. Praktik Layouting](/css-itu-mudah/chapter/praktik-layouting)
 
-[9. Responsive](./chapter/responsive)
+[9. Responsive](/css-itu-mudah/chapter/responsive)
 
-[10. Menggunakan Framework](./chapter/menggunakan-framework)
+[10. Menggunakan Framework](/css-itu-mudah/chapter/menggunakan-framework)
 
 
 ## Credits
