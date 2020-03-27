@@ -37,7 +37,6 @@ export default {
   methods: {
     handleClick() {
       const mainContent = document.querySelector("#main-content")
-      console.log(mainContent)
       if (mainContent) {
         mainContent.scrollTo(0, 0)
       }
