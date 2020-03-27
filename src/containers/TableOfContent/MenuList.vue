@@ -10,7 +10,7 @@
         <menu-list
           v-if="isFiltered"
           :list="content.subChapter" 
-          @click="onClick"
+          :onClick="onClick"
         />
       </li>
     </ul>
