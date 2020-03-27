@@ -29,6 +29,13 @@ export default {
 
 <style lang="less" scoped>
 .navigation {
+  display: none;
+
+  @media only screen and (min-width: 1024px) {
+    & {
+      display: block;
+    }
+  }
   &-outer {
     margin-top: -15px;
     margin-bottom: 25px;
