@@ -64,7 +64,7 @@ export default {
         },
         { 
           name: "keywords", 
-          content: "CSS, belajar CSS, tutorial CSS, belajar CSS pemula, tutorial CSS pemula, belajar CSS gratis, tutorial CSS gratis",
+          content: "CSS itu mudah, Naufal Rabbani CSS, ebook CSS, CSS, belajar CSS, tutorial CSS Bahasa Indonesia, belajar CSS pemula, tutorial CSS pemula, belajar CSS gratis, tutorial CSS gratis",
         },
         { 
           name: "robots", 
@@ -114,6 +114,11 @@ export default {
           name: "twitter:image",
           content: coverImage,
         },
+      ],
+      links: [
+        { rel: "canonical", href: "http://bosnaufal.github.io/css-itu-mudah/" },
+        { rel: "author", href: "https://github.com/BosNaufal" },
+        { rel: "publisher", href: "https://github.com/BosNaufal" },
       ]
     }
   },

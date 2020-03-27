@@ -9,19 +9,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient, appOptions }) {
 
   head.link.push({
-    rel: "canonical", 
-    href: "http://bosnaufal.github.io/css-itu-mudah/",
-  })
-  head.link.push({
-    rel: "author", 
-    href: "https://github.com/BosNaufal",
-  })
-  head.link.push({
-    rel: "publisher", 
-    href: "https://github.com/BosNaufal",
-  })
-
-  head.link.push({
     rel: 'stylesheet',
     href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
   })
