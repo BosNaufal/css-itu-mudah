@@ -17,7 +17,7 @@ Nah enaknya CSS tuh kita gak perlu install hal-hal yang aneh-aneh. Cukup browser
 
 ## Membuat File HTML
 
-Untuk melakukan styling menggunakan CSS, pertama-tama harus ada yang distyling dulu. Mari kita buat file HTML. Oh iya, kalau bisa bikin folder yang kosongan terus sama-sama kita kasih nama foldernya `belajar-css-santuy` supaya tidak bingung nantinya.  
+Untuk melakukan styling menggunakan CSS, pertama-tama harus ada yang distyling dulu. Mari kita buat file HTML. Oh iya, kalau bisa bikin folder yang kosongan terus sama-sama kita kasih nama foldernya `belajar-santuy` supaya tidak bingung nantinya.  
 
 Isi konten file HTML nya dengan kodingan seperti di bawah ini: 
 
