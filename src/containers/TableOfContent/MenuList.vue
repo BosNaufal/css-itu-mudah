@@ -3,13 +3,14 @@
     <ul v-if="list" class="menu-list">
       <li v-for="(content) in list" :key="content.originalIndex">
         <g-link :to="content.path">
-          <span>
+          <span @click="onClick">
             {{ `${content.originalIndex}.` }} {{ content.title }}
           </span>
         </g-link>
         <menu-list
           v-if="isFiltered"
           :list="content.subChapter" 
+          @click="onClick"
         />
       </li>
     </ul>
@@ -24,6 +25,7 @@ export default {
   props: {
     isFiltered: Boolean,
     list: Array,
+    onClick: Function,
   },
 }
 </script>
@@ -65,6 +67,10 @@ export default {
     &.active--exact.active {
       color: var(--dark-primary-color);
     }
+  }
+
+  span {
+    display: block;
   }
 }
 </style>

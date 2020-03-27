@@ -8,7 +8,7 @@
         <div class="desktop-table-of-content" v-if="!isFocusMode">
           <TableOfContentContainer />
         </div>
-        <div :class="{ 'main-content': true, 'focus': isFocusMode }">
+        <div id="main-content" :class="{ 'main-content': true, 'focus': isFocusMode }">
           <NavigationDesktopContainer />
           <div class="main-content-inner mini-container">
             <slot/>
