@@ -16,13 +16,27 @@ export default {
     },
   },
 
+  watch: {
+    content(newValue, prev) {
+      this.$nextTick(() => {
+        this.enhanceTable()
+      })
+    }
+  },
+
+  methods: {
+    enhanceTable() {
+      this.$refs.content.querySelectorAll("table").forEach((table) => {
+        const wrapper = document.createElement("div")
+        wrapper.className = "table-wrapper"
+        const tableParent = table.parentNode.insertBefore(wrapper, table)
+        wrapper.appendChild(table)
+      })
+    }
+  },
+
   mounted() {
-    this.$refs.content.querySelectorAll("table").forEach((table) => {
-      const wrapper = document.createElement("div")
-      wrapper.className = "table-wrapper"
-      const tableParent = table.parentNode.insertBefore(wrapper, table)
-      wrapper.appendChild(table)
-    })
+    this.enhanceTable()
   }
 }
 </script>
