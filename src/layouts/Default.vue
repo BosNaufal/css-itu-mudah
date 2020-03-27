@@ -38,7 +38,6 @@ query {
 import StoreProvider from '@/stores/Provider'
 import NavigationContainer from '@/containers/Navigation/NavigationContainer'
 import SidebarContainer from '@/containers/Sidebar/SidebarContainer'
-import MainSearchbarContainer from '@/containers/MainSearchbar/MainSearchbarContainer'
 import { GET_IS_FOCUS_MODE } from '@/stores/types'
 import { mapGetters } from 'vuex'
 
@@ -49,8 +48,6 @@ export default {
     NavigationDesktopContainer: () => import('@/containers/NavigationDesktop/NavigationDesktopContainer'),
     SidebarContainer,
     TableOfContentContainer: () => import('@/containers/TableOfContent/TableOfContentContainer'),
-
-    MainSearchbarContainer,
   },
 
   computed: {
