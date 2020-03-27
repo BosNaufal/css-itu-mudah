@@ -1,17 +1,15 @@
 <template>
   <header class="navigation">
     <div class="navigation-outer">
-      <div class="mini-container">
-        <nav class="navigation-inner">
-          <button class="navigation-button" @click="onOpenSidebar">
-            <i class="eva eva-menu-outline"></i>
-          </button>
-          <div class="navigation-logo">
-            <g-link to="/" class="title">{{ metadata.bookTitle }}</g-link>
-            <a :href="metadata.author.link" class="subtitle">By {{ metadata.author.name }}</a>
-          </div>
-        </nav>
-      </div>
+      <nav class="navigation-inner">
+        <button class="navigation-button" @click="onOpenSidebar">
+          <i class="eva eva-menu-outline"></i>
+        </button>
+        <div class="navigation-logo">
+          <g-link to="/" class="title">{{ metadata.bookTitle }}</g-link>
+          <a :href="metadata.author.link" class="subtitle">By {{ metadata.author.name }}</a>
+        </div>
+      </nav>
     </div>
   </header>
 </template>
@@ -31,16 +29,10 @@ export default {
 
 <style lang="less" scoped>
 .navigation {
-  @media only screen and (min-width: 1024px) {
-    & {
-      display: none;
-    }
-  }
-  
   &-outer {
-    z-index: 99;
+    margin-top: -15px;
+    margin-bottom: 25px;
     background: #FFF;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -51,6 +43,7 @@ export default {
     display: flex;
     padding: 5px 0;
     align-items: center;
+    padding-left: 25px;
   }
   &-button {
     cursor: pointer;

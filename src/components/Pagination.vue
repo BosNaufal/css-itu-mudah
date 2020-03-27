@@ -1,23 +1,21 @@
 <template>
-  <div class="mini-container">
-    <div class="pagination">
-      <g-link class="pagination-prev" 
-        :disabled="prev === null"
-        :to="prev && prev.path"
-      >
-        <i class="eva eva-arrow-ios-back-outline"></i>
-        <span>Prev Page</span>
-      </g-link>
+  <div class="pagination">
+    <g-link class="pagination-prev" 
+      :disabled="prev === null"
+      :to="prev && prev.path"
+    >
+      <i class="eva eva-arrow-ios-back-outline"></i>
+      <span>Prev Page</span>
+    </g-link>
 
-      <g-link 
-        class="pagination-next" 
-        :disabled="next === null"
-        :to="next && next.path"
-      >
-        <span>Next Page</span>
-        <i class="eva eva-arrow-ios-forward-outline"></i>
-      </g-link>
-    </div>
+    <g-link 
+      class="pagination-next" 
+      :disabled="next === null"
+      :to="next && next.path"
+    >
+      <span>Next Page</span>
+      <i class="eva eva-arrow-ios-forward-outline"></i>
+    </g-link>
   </div>
 </template>
 
@@ -47,13 +45,30 @@ export default {
     cursor: pointer;
 
     i {
-      font-size: 2.5rem;
+      position: relative;
+      font-size: 1.5rem;
       color: var(--primary-color);
+      line-height: 0; 
+      top: 1px;
+
+      @media only screen and (min-width: 1024px) {
+        & {
+          margin-top: 3px;
+        }
+      }
     }
 
     span {
-      font-size: 1rem;
+      display: block;
+      font-size: 1.1rem;
+
+      @media only screen and (min-width: 1024px) {
+        & {
+          font-size: 1.3rem;
+        }
+      }
       color: #2b2b2b;
+      line-height: 0; 
     }
 
     &[disabled] {
@@ -64,18 +79,23 @@ export default {
   }
 
   &-prev, &-next {
-    padding: 10px 0 10px;
+    padding: 25px 0px;
+    @media only screen and (min-width: 1024px) {
+      & {
+        padding: 30px 0px;
+      }
+    }
   }
 
   &-next {
     border-left: 1px solid #DDD;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 3%;
   }
   &-prev {
     border-right: 1px solid #DDD;
     justify-content: flex-start;
-    padding-left: 10px;
+    padding-left: 3%;
   }
 }
 </style>

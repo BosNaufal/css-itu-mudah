@@ -1,11 +1,15 @@
 <template>
-  <Fragment>
-    <Content :content="$page.content" />
-    <PaginationContainer 
-      :content="$page.content"
-      :allContent="$page.allContent" 
-    />
-  </Fragment>
+  <Layout>
+    <template #default>
+      <Content :content="$page.content" />
+    </template>
+    <template #footer>
+      <PaginationContainer 
+        :content="$page.content"
+        :allContent="$page.allContent" 
+      />
+    </template>
+  </Layout>
 </template>
 
 <page-query>

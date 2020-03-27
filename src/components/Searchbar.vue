@@ -7,7 +7,7 @@
         :placeholder="props.placeholder" 
       />
       <button type="submit">
-        <i class="eva eva-search-outline"></i>
+        <i :class="`eva eva-${isClearable ? 'close' : 'search-outline'}`"></i>
       </button>
     </form>
   </div>
@@ -15,7 +15,7 @@
 
 
 <script>
-import { ref, watch } from '@vue/composition-api'
+import { ref, watch, computed } from '@vue/composition-api'
 
 export default {
   props: {
@@ -33,6 +33,7 @@ export default {
 
   setup(props) {
     const query = ref("")
+    const isClearable = computed(() => query.value !== "")
 
     watch(query, (newQuery) => {
       if (!props.onInput) return false
@@ -40,14 +41,15 @@ export default {
     })
 
     const handleSubmit = () => {
-      if (!props.onSearch) return false
-      props.onSearch(query.value)
+      if (!isClearable) return false
+      query.value = ""
     }
 
     return {
       props,
       query,
       handleSubmit,
+      isClearable,
     }
   }
 }
@@ -82,6 +84,7 @@ export default {
     padding: 5px 10px;
     font-size: 1.5rem;
     outline: none;
+    cursor: pointer;
   }
 }
 </style>

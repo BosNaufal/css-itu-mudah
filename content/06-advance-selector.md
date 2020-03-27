@@ -269,7 +269,7 @@ Konten CSS:
 }
 ```
 
-Makan kita bisa melakukan interaksi dengan element seperti gambar dibawah ini:
+Maka kita bisa melakukan interaksi dengan element seperti gambar dibawah ini:
 
 ![efek hover dengan CSS](./images/hover.gif)
 
@@ -382,5 +382,5 @@ Maka tampilannya akan seperti ini
 ![Cara styling input saat disabled](./images/by-attribute.png)
 
 
-Banyak banget yak chpater ini? Mulai bingung? gapapa ga harus paham sekarang.
+Banyak banget yak chapter ini? Mulai bingung? gapapa ga harus paham sekarang.
 
