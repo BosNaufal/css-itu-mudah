@@ -1,8 +1,8 @@
 <template>
-  <Layout>
+  <Fragment>
     <h1 class="content-title">{{ content.title }}</h1>
     <div class="content" ref="content" v-html="content.content"></div>
-  </Layout>
+  </Fragment>
 </template>
 
 <script>
